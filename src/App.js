@@ -6,6 +6,7 @@ import Home from "./Components/Pages/Home";
 import Todo from "./Components/Pages/SingleTodo";
 import Todos from "./Components/Layouts/Todos";
 import { Container } from "react-bootstrap";
+import Footer from "./Components/Layouts/Footer";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -14,7 +15,10 @@ function App() {
   return (
     <Router>
       <TodoNav todoLength={todos.length} />
-      <Container className="pt-5">
+      <Container
+        className="pt-5"
+        style={{ minHeight: window.screen.height - 150 }}
+      >
         <Switch>
           <Route
             exact
@@ -24,6 +28,7 @@ function App() {
           <Route exact path="/todos" render={() => <Todos todos={todos} />} />
           <Route exact path="/:id" render={() => <Todo todos={todos} />} />
         </Switch>
+        <Footer />
       </Container>
     </Router>
   );
