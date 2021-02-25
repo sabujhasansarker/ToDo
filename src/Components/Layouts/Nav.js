@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Badge } from "react-bootstrap";
 
 const TodoNav = ({ todoLength }) => {
   return (
@@ -26,6 +26,7 @@ const TodoNav = ({ todoLength }) => {
             </Nav.Link>
             <Nav.Link as={Link} to="todos">
               Todos
+              <Badge variant="light ml-1 ">{todoLength}</Badge>
             </Nav.Link>
           </Nav>
         </Container>

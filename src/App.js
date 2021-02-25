@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <TodoNav todoLength={todos.length} />
-      <Container>
+      <Container className="pt-5">
         <Switch>
           <Route
             exact
