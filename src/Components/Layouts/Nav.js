@@ -12,7 +12,7 @@ const TodoNav = ({ todoLength }) => {
             <Link to="/" className="text-white">
               <img
                 alt=""
-                src="https://p1.hiclipart.com/preview/361/531/595/clay-os-6-a-macos-icon-todo-blue-and-white-check-icon-art-png-clipart.jpg"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoG6tfQA2ZpPPeYhFg8p4GJlb0AiLMtDe43A&usqp=CAU"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
