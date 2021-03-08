@@ -21,7 +21,7 @@ const Home = ({ addTodo }) => {
     <div className="home">
       {add && (
         <Alert variant="success">
-          <Alert.Heading as="h5">your Todo Add Now.❤</Alert.Heading>
+          <Alert.Heading as="h5">Your Todo Add Now.❤</Alert.Heading>
         </Alert>
       )}
       <h1 className="text-center">Add Todo</h1>
